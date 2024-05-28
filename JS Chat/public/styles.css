@@ -1,0 +1,197 @@
+body,
+html {
+    padding: 0;
+    margin: 0;
+}
+
+
+#app {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* header */
+.header-control {
+    padding: 20px;
+
+    display: flex;
+    justify-content: space-between; 
+}
+
+.button-logout {
+    border-radius: 10px;
+    padding: 5px 10px;
+
+    border: none; 
+
+    cursor: pointer;
+}
+
+.button-logout:hover {
+    background-color: black;
+
+    color: white;
+}
+
+
+/* main */
+.main {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+
+    height: 90vh;
+
+    padding: 1rem;
+}
+
+
+.users-list {
+    grid-column: span 4;
+
+    align-items: center;
+
+}
+
+.user-single {
+    list-style: none;
+
+}
+
+.user-icon {
+    margin-right: 8px;
+}
+
+
+
+/* messageArea */
+.message-area {
+    grid-column: span 8;
+
+    align-items: center;   
+
+    background-image: url('./image.png'); 
+    background-size: cover; 
+
+    padding: 0.5rem;
+}
+
+.sender-form, 
+.messages-list {
+    padding-left: 0.5rem;
+}
+
+.sent-message-container {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.text-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    padding-left: 20px;
+}
+
+.text-button-container {
+    padding-left: 10px;
+}
+
+.button-delete, 
+.button-edit, 
+.submit-button {
+    border-radius: 10px;
+
+    border: none; 
+
+    cursor: pointer;
+
+    background-color: darkgray;
+    color: white;
+}
+
+.button-delete:hover, 
+.button-edit:hover,
+.submit-button:hover {
+    background-color: black;
+
+    color: white;
+    
+} 
+
+.write-message-container {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.write-message-container textarea {
+    display: flex;
+    align-items: center; 
+
+    height: 80px;  
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical; 
+}
+
+.button-container {
+    padding-left: 10px;
+
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+
+
+/* Login Page */
+.login-form {
+    display: flex;
+    justify-content: center;
+
+    width: 300px; 
+    height: 200px;
+    border-radius: 8px;
+    box-shadow: 0 5px 8px 1px rgb(215, 215, 215);
+
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+
+.username {
+    margin-top: 0.5rem;
+}
+
+.form-button-container {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.button-login { 
+    border: none;
+    border-radius: 3px;
+
+    padding: 0.2rem 0.5rem;
+
+    font-size: 1rem;
+}
+
+.button-login:hover {
+    background-color: black;
+    color: white;
+}
+
+.error-message {
+    color: red;
+}
